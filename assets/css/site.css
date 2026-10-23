@@ -1,6 +1,4 @@
-@font-face{font-family:"Sentient";src:url(/wonder-nails/assets/fonts/sentient-300.woff2) format("woff2");font-weight:300;font-style:normal;font-display:swap}
-@font-face{font-family:"Sentient";src:url(/wonder-nails/assets/fonts/sentient-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Sentient";src:url(/wonder-nails/assets/fonts/sentient-500.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Sentient Fallback";src:local("Times New Roman"),local("Liberation Serif"),local("Tinos"),local("Times");font-weight:300 500;size-adjust:119%;ascent-override:80.7%;descent-override:26.9%;line-gap-override:6.7%}
 
 :root{
   --wall:#b4c0c9; --wall2:#d9c6bb; --ink:#1c1c1c; --muted:#38424a; --olive:#2c3620; --bone:#e3e2da;
@@ -13,13 +11,13 @@
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-padding-top:72px}
-body{font:400 var(--body)/1.5 "Sentient",Georgia,serif;background:var(--wall);color:var(--ink);overflow-x:hidden}
+body{font:400 var(--body)/1.5 "Sentient","Sentient Fallback",Georgia,serif;background:var(--wall);color:var(--ink);overflow-x:hidden}
 img{display:block;max-width:100%}
 a{color:inherit}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 body:has(dialog[open]){overflow:hidden}
 :focus-visible{outline:3px solid var(--ink);outline-offset:3px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;background:var(--olive);color:var(--bone);font:500 1.0625rem/1 "Sentient",serif;text-decoration:none;transition:background-color .2s ease}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;background:var(--olive);color:var(--bone);font:500 1.0625rem/1 "Sentient","Sentient Fallback",serif;text-decoration:none;transition:background-color .2s ease}
 .btn:hover{background:#1f2616}
 .btn.on-olive{background:var(--bone);color:var(--olive)}
 .btn.on-olive:hover{background:#fff}
@@ -47,12 +45,12 @@ figcaption{font-size:var(--small);margin-top:10px;max-width:34ch;color:var(--mut
 .h-wide{grid-column:9/13;grid-row:2;aspect-ratio:16/10;margin-top:clamp(18px,3vh,32px);margin-right:calc(-1 * var(--m) * .6)}
 .say{display:grid;gap:16px;align-content:start;padding-right:12px}
 .hero .credit{grid-column:4/9;grid-row:3;font-size:var(--small);padding-top:12px;color:var(--muted)}
-h1{font:300 clamp(2.75rem,1rem + 6.4vw,7.5rem)/.98 "Sentient",serif;letter-spacing:-.02em}
+h1{font:300 clamp(2.75rem,1rem + 6.4vw,7.5rem)/.98 "Sentient","Sentient Fallback",serif;letter-spacing:-.02em}
 .tag{display:none}
 .lede{font-size:var(--body);max-width:30ch}
 .acts{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center}
 
-h2{font:300 var(--head)/1 "Sentient",serif;letter-spacing:-.015em}
+h2{font:300 var(--head)/1 "Sentient","Sentient Fallback",serif;letter-spacing:-.015em}
 .sets{padding:clamp(80px,12vw,200px) var(--m) 0;display:grid;grid-template-columns:repeat(12,1fr);column-gap:var(--gap)}
 .sets>h2{grid-column:2/9}
 .sets>.intro{grid-column:2/7;margin-top:22px;max-width:36ch}
@@ -83,7 +81,7 @@ dialog::backdrop{background:var(--wall)}
 .vbar{display:flex;gap:12px;align-items:center;justify-content:space-between;padding-top:14px;flex-wrap:wrap}
 .vbar .nav{display:flex;gap:12px}
 .vbar p{max-width:60ch}
-.vbar button{min-height:48px;min-width:48px;padding:0 20px;background:var(--olive);color:var(--bone);border:0;font:500 1rem "Sentient",serif;cursor:pointer}
+.vbar button{min-height:48px;min-width:48px;padding:0 20px;background:var(--olive);color:var(--bone);border:0;font:500 1rem "Sentient","Sentient Fallback",serif;cursor:pointer}
 
 @media (prefers-reduced-motion:no-preference){
   html{scroll-behavior:smooth}

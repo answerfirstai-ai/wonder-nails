@@ -1,4 +1,4 @@
-# Wonder Nails build. Design: Desire's mock (05-mockup/output/mock.html; brief Rev 2). Codor's job here is the live build, not a new layout.
+# Wonder Nails build. Fonts: Sentient via Fontshare's own stylesheet (api.fontshare.com), nothing self-hosted. Design: Desire's mock (05-mockup/output/mock.html; brief Rev 2). Codor's job here is the live build, not a new layout.
 import json, html, os
 from PIL import Image
 R='/workspace/sites/wonder-nails/'; B='/wonder-nails/'; SITE='https://answerfirstai-ai.github.io/wonder-nails/'
@@ -99,7 +99,8 @@ def page(path,body,title=TITLE,extra='',robots=''):
 <title>{html.escape(title)}</title><meta name="description" content="{html.escape(DESC)}">{robots}<link rel="canonical" href="{SITE}{path}">
 <meta name="theme-color" content="#b4c0c9"><meta property="og:type" content="website"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(DESC)}"><meta property="og:url" content="{SITE}{path}"><meta property="og:image" content="{SITE}assets/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Blue-black galaxy almond nails with silver flecks on white fur"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="{B}assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="{B}assets/fonts/sentient-300.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="{B}assets/fonts/sentient-400.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="{B}assets/fonts/sentient-500.woff2" as="font" type="font/woff2" crossorigin>{extra}
+<link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=sentient@300,400,500&display=swap">{extra}
 <link rel="stylesheet" href="{B}assets/css/site.css">
 <script>document.documentElement.className+=' js'</script>
 <script type="application/ld+json">{json.dumps(LD,ensure_ascii=False)}</script></head><body>{body}
