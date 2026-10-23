@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://answerfirstai-ai.github.io/wonder-nails/sitemap.xml
