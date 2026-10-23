@@ -100,7 +100,7 @@ def page(path,body,title=TITLE,extra='',robots=''):
 <meta name="theme-color" content="#b4c0c9"><meta property="og:type" content="website"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(DESC)}"><meta property="og:url" content="{SITE}{path}"><meta property="og:image" content="{SITE}assets/img/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Blue-black galaxy almond nails with silver flecks on white fur"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="{B}assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
-<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=sentient@300,400,500&display=swap">{extra}
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=sentient@300,400,500&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=sentient@300,400,500&display=swap"></noscript>{extra}
 <link rel="stylesheet" href="{B}assets/css/site.css">
 <script>document.documentElement.className+=' js'</script>
 <script type="application/ld+json">{json.dumps(LD,ensure_ascii=False)}</script></head><body>{body}
