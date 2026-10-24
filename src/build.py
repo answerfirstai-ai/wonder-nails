@@ -38,11 +38,11 @@ body=f'''<header>
 <main id="top">
 <section class="hero">
   <div class="hd"><h1>Wonder Nails</h1>
-  <p class="tag">A nail salon in Little Tokyo, open every day.</p></div>
+  <p class="tag">A nail salon in Little Tokyo. Hours may vary; call to confirm.</p></div>
   <div class="left">
     <figure class="h-sq"><button class="print" data-i="4" aria-label="Look closer: lavender and white ombre set">{pic('lavender','Lavender and white ombre nails on white fur','(max-width:900px) 40vw, 16vw',lazy=False)}</button></figure>
     <div class="say">
-      <p class="lede">A nail salon on East 1st Street in Little Tokyo, open every day.</p>
+      <p class="lede">A nail salon on East 1st Street in Little Tokyo, open daily per Google Maps. Call to confirm.</p>
       <div class="acts">{btn('',f'Call {PHONE}')}<a class="link" href="#visit">Directions</a></div>
     </div>
   </div>
@@ -62,7 +62,7 @@ body=f'''<header>
 
 <section class="hours" id="hours">
   <div class="t fade">
-    <h2>Open every day</h2>
+    <h2>Hours may vary, call to confirm</h2>
     <ul><li>Monday to Saturday, 10 to 7:30</li><li>Sunday, 10 to 6</li></ul>
     <div class="acts">{btn('',f'Call {PHONE}')}{dm}</div>
     <p class="note">Hours per the Google listing; call to confirm.</p>
